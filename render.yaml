@@ -27,4 +27,4 @@ services:
 databases:
   - name: routegenius-db
     databaseName: routegenius
-    user: routegenius_user
+    user: geniususer
