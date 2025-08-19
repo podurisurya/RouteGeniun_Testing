@@ -9,16 +9,12 @@ services:
         fromDatabase:
           name: routegenius-db
           property: connectionString
-      - key: DB_USERNAME
-        fromDatabase:
-          name: routegenius-db
-          property: user
-      - key: DB_PASSWORD
-        fromDatabase:
-          name: routegenius-db
-          property: password
       - key: SPRING_PROFILES_ACTIVE
         value: production
+      - key: MAIL_USERNAME
+        value: teamroutemax@gmail.com
+      - key: MAIL_PASSWORD
+        value: cbfn tlwn keil eimk
       - key: MAIL_USERNAME
         value: teamroutemax@gmail.com
       - key: MAIL_PASSWORD
