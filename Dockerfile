@@ -26,8 +26,8 @@ WORKDIR /app
 # Copy the .jar file from the 'builder' stage
 COPY --from=builder /build/target/authdemo-0.0.1-SNAPSHOT.jar app.jar
 
-# Expose the port the app runs on
-EXPOSE 8080
+# Expose the port the app runs on (Render uses dynamic PORT)
+EXPOSE ${PORT:-8080}
 
 # The command to run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
